@@ -1,0 +1,38 @@
+{{> heads}}
+    <div class='container'>
+        <div class='row mb-5'>
+            <div class='col-6 offset-3'>
+                <form method='post' action='/register'>
+                    <h1 class='mt-3'>Register</h1>
+                    <div class="mb-3 mt-3">
+                        <label for="address" class="form-label">BSC address</label>
+                        <input type="text" class="form-control" id="address" placeholder="0x00...">
+                        <div id="addressHelp" class="form-text">Binance Smart Chain (BSC) blockchain account address</div>
+                    </div>
+                    <div>
+                        <span>
+                            We will create an account for you on the second-level network,
+                            for this, come up with your unique password.
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            Please do not enter the private key here.
+                        </span>
+                    </div>
+                    <div class="mb-1 mt-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password">
+                        <div id="passwordHelp" class="form-text">Chain Dating Layer 2 password</div>
+                    </div>
+                    <div class="mb-1 mt-3">
+                        <label for="password2" class="form-label">Repeat password</label>
+                        <input type="text" class="form-control" id="password2">
+                        <div id="password2Help" class="form-text">Just repeat</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-end">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{{> foots}}
